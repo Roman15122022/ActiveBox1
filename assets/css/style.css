@@ -115,6 +115,7 @@ p{
     border-radius: 3px;
     font-family: 'Raleway', sans-serif;
     transition: background-color .1s linear;
+    text-align: center;
 }
 .btn--red{
     background-color: #e84545;
@@ -123,6 +124,9 @@ p{
 }
 .btn--red:hover{
     background-color: #af3232;
+}
+.btn--long{
+    min-width: 280px;
 }
 /*FEATURES
 -------------------------------------*/
@@ -250,7 +254,9 @@ p{
 --------------------------------------*/
 .social{
     display: flex;
-
+}
+.social--footer{
+    justify-content: center;
 }
 .social__item{
     display: flex;
@@ -276,6 +282,19 @@ p{
     display: block;
     height: 18px;
     transition: fill .2s linear;
+}
+.social--footer .social__item{
+    background-color:transparent;
+    border-width: 2px;
+    border-color: white ;
+    border-radius: 2px;
+}
+
+.social--footer .social__item:hover{
+    background-color: white;
+}
+.social--footer .social__icon{
+    fill: white;
 }
 /*REVIEWS
 --------------------------------------------*/
@@ -321,3 +340,71 @@ p{
     font-weight: 700;
     font-size: 13px;
 }
+/*DOWNLOAD
+------------------------------------------*/
+.download{
+    margin: 90px 0;
+    text-align: center;
+}
+.download__title{
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.download__text{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    color: #2d3033;
+    margin-bottom: 30px;
+}
+/*FOOTER*/
+.footer{
+
+    background-color: #3a3e64;
+}
+.footer__inner{
+    padding: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__block{
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 15px;
+
+}
+.footer__title{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer__address{
+    color: rgba(255,255,255,.5);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+
+}
+
+/*Copyright
+------------------------------------------------*/
+.copyright{
+    background-color: #313454;
+    padding: 20px 0;
+}
+.copyright__text{
+    text-align: center;
+    font-size: 14px;
+    color: #808080;
+    line-height: 1.5;
+}
+.copyright__text span{
+    color: white;
+}
+/*.fa-solid .fa-heart{
+    background-color: red;
+}*/
